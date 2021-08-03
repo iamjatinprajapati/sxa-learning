@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{7E872076-3B8A-4861-9685-A7DF3F2C4316}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.XA.Foundation.ScribanExtensions", "src\Foundation\ScribanExtension\website\Sitecore.XA.Foundation.ScribanExtensions.csproj", "{0B5B5D9B-0C7E-420E-9BB5-64C742BA96A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{86CB4A83-D936-4CC9-8DC5-45CDE284E123}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.XA.Feature.SlickCarousel", "src\Feature\SlickCarousel\website\Sitecore.XA.Feature.SlickCarousel.csproj", "{CD21587D-9652-45CE-835E-8368EDCBCE70}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "configs", "configs", "{24C23ED2-D982-47DF-979D-AC3526C6C51F}"
+	ProjectSection(SolutionItems) = preProject
+		nuget.config = nuget.config
+		TdsGlobal.config = TdsGlobal.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tdsproject", "tdsproject", "{3849D8DD-BAA7-4476-B8CE-E2FBFBFBE302}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.XA.Learning.Master.TDS", "src\tdsproject\Sitecore.XA.Learning.Master.TDS\Sitecore.XA.Learning.Master.TDS.scproj", "{CD7BE1D2-7B6B-4502-8AE8-E684B61FFC39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B5B5D9B-0C7E-420E-9BB5-64C742BA96A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B5B5D9B-0C7E-420E-9BB5-64C742BA96A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B5B5D9B-0C7E-420E-9BB5-64C742BA96A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B5B5D9B-0C7E-420E-9BB5-64C742BA96A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD21587D-9652-45CE-835E-8368EDCBCE70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD21587D-9652-45CE-835E-8368EDCBCE70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD21587D-9652-45CE-835E-8368EDCBCE70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD21587D-9652-45CE-835E-8368EDCBCE70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD7BE1D2-7B6B-4502-8AE8-E684B61FFC39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD7BE1D2-7B6B-4502-8AE8-E684B61FFC39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD7BE1D2-7B6B-4502-8AE8-E684B61FFC39}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{CD7BE1D2-7B6B-4502-8AE8-E684B61FFC39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD7BE1D2-7B6B-4502-8AE8-E684B61FFC39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD7BE1D2-7B6B-4502-8AE8-E684B61FFC39}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0B5B5D9B-0C7E-420E-9BB5-64C742BA96A0} = {7E872076-3B8A-4861-9685-A7DF3F2C4316}
+		{CD21587D-9652-45CE-835E-8368EDCBCE70} = {86CB4A83-D936-4CC9-8DC5-45CDE284E123}
+		{CD7BE1D2-7B6B-4502-8AE8-E684B61FFC39} = {3849D8DD-BAA7-4476-B8CE-E2FBFBFBE302}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C8A9B775-E2BF-4D82-88F3-EFD4A31306CC}
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,34 @@
+﻿@using Sitecore.XA.Feature.Composites.Models
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+
+@model Sitecore.XA.Feature.SlickCarousel.Models.SlickCarouselRenderingModel
+
+@{ 
+    const string baseKey = "section-content";
+    const string bulletsCssClass = "sxa-bullets";
+    const string numbersCssClass = "sxa-numbers";
+}
+
+<div @Html.Sxa().Component(Model.Rendering.RenderingCssClass ?? "slick-carousel", Model.Attributes) data-properties="@Model.JsonDataProperties">
+    <div class="slider-active dot-style">
+        @foreach (var composite in Model.CompositeItems)
+        {
+            var headerKey = string.Format("{0}-{1}-{2}", baseKey, composite.Key, Model.Id);
+            using (Html.Sxa().BeginEditFrame(composite.Value.ID.ToString(), "Carousel", Model.IsControlEditable))
+            {
+                <div class="single-slider d-flex align-items-center slider-height">
+                    <div class="container">
+                        @Html.Sitecore().Placeholder(headerKey)
+                    </div>
+                </div>
+            }
+        }
+    </div>
+    <!-- Slider Shape -->
+    <div class="slider-shape d-none d-lg-block">
+        <div class="slider-shape1"></div>
+        <div class="slider-shape2"></div>
+        <div class="slider-shape3"></div>
+    </div>
+</div>
